@@ -1,5 +1,5 @@
 {
-  "homepage": "https://saleem2q3.github.io/AuctionX/",
+  "homepage": "https://saleem2q3.github.io/AuctionX/  ",
   "name": "auctionx",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.7.9",
