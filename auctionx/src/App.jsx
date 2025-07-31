@@ -7,15 +7,15 @@ import Profile from './components/Profile';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import EmailVerification from './pages/EmailVerification';
-import Blog from './pages/Blog'; // Import Blog page
-import About from './pages/About'; // Import About page
-import AdminLogin from './pages/AdminLogin'; // Import AdminLogin page
-import AdminDashboard from './components/AdminDashboard'; // Import AdminDashboard component
-import UserDetails from './components/UserDetails'; // Import UserDetails component
+import Blog from './pages/Blog';
+import About from './pages/About';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './components/AdminDashboard';
+import UserDetails from './components/UserDetails';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/AuctionX">
       <div className="min-h-screen flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,11 +24,11 @@ function App() {
           <Route path="/forgot" element={<ForgotPassword />} />
           <Route path="/reset" element={<ResetPassword />} />
           <Route path="/verify" element={<EmailVerification />} />
-          <Route path="/blog" element={<Blog />} /> {/* Add Blog route */}
-          <Route path="/about" element={<About />} /> {/* Add About route */}
-          <Route path="/admin/login" element={<AdminLogin />} /> {/* Add AdminLogin route */}
-          <Route path="/admin/dashboard" element={<AdminDashboard />} /> {/* Add AdminDashboard route */}
-          <Route path="/admin/user-details" element={<UserDetails />} /> {/* Add UserDetails route */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/user-details" element={<UserDetails />} />
         </Routes>
         {/* <Footer /> */}
       </div>
